@@ -1,0 +1,55 @@
+
+<body bgcolor="#E6E6FA">
+{% extends "layout.html" %}
+
+{% block left %}
+        <style>
+
+    li{
+        height: 60px;
+        line-height: 30px;
+        font-size:20px;
+    }
+    img{
+  position:absolute;
+  left:600px;
+  top:150px;
+
+  }
+
+
+    </style>
+    <div class="col-sm-3 col-md-2 sidebar">
+    <ul class="nav nav-sidebar">
+        <li><a href="/pic1">公司人数</a></li>
+        <li><a href="/pic2">公司性质</a></li>
+        <li><a href="/pic3">公司福利</a></li>
+        <li><a href="/pic4">学历要求</a></li>
+        <li><a href="/pic5">工作经验要求漏斗图</a></li>
+        <li><a href="/pic6">学历要求漏斗图</a></li>
+        <li><a href="/pic7">薪资与经验折线图</a></li>
+        <li><a href="/pic8">薪资与学历折线图</a></li>
+        <li><a href="/pic9">人才需求分布图</a></li>
+
+    </ul>
+    <ui><img src="/static/2.gif"></ui>
+</div>
+
+{% endblock %}
+
+{% block right %}
+
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <h1 class="page-header"></h1>
+
+    <div class="row placeholders">
+
+        <div class="col-xs-12 col-sm-8 col-lg-10 placeholder" style="height:500px;" id="main">
+
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}
+</body>
